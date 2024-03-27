@@ -10,6 +10,7 @@ body {
 	margin-right: auto;
 	background-color: #F5F5F5;
 	color: #303841;
+	min-width: 500px;
 }
 h1, h2, h3 {
 	margin: 0;
@@ -71,8 +72,9 @@ hr.solid {
 	border-radius: 5px;
   }
 
-.material-icons {
+i.material-icons {
 	color: #303841;
+	font-size: 20px;	
 }
 .group-inline{
 	display: flex;
@@ -85,5 +87,14 @@ a {
 @media only screen and (min-width: 1200px) {
 	body{
 		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body, h1, h2,h3.role, h3{
+		font-size: 60%;
+	}
+	i.material-icons {
+		font-size: 10px;
 	}
 }

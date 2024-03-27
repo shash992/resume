@@ -4,7 +4,6 @@ body {
 	line-height: 1.5;
 	margin: 0;
 	padding: 20px;
-	width: 42%;
 	display: block;
 	text-align: center;
 	margin-left: auto;
@@ -78,4 +77,13 @@ hr.solid {
 .group-inline{
 	display: flex;
 	justify-content: flex-start;
+}
+a {
+	color: #516BEB;
+}
+
+@media only screen and (min-width: 1200px) {
+	body{
+		width: 40%;
+	}
 }

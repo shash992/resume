@@ -179,3 +179,8 @@ button.print-button {
 	height:120%;
 	transition: height .2s .15s, border-width 0s .16s;
   }
+@media print {
+  button.print-button {
+    display: none;
+  }
+	  }

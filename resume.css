@@ -91,7 +91,7 @@ a {
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 	body, h1, h2,h3.role, h3{
 		font-size: 60%;
 	}

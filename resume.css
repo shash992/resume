@@ -77,9 +77,11 @@ i.material-icons {
 	color: #303841;
 	font-size: 20px;	
 }
-.group-inline{
+.skills{
 	display: flex;
-	justify-content: flex-start;
+	flex-wrap: wrap;
+  	height: 400px;
+  	align-content: space-between;
 }
 a {
 	color: #516BEB;

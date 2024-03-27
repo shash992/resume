@@ -1,0 +1,81 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 20px;
+	width: 42%;
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F5F5F5;
+	color: #303841;
+}
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+h2 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+h3 {
+	font-size: 16px;
+	margin-bottom: 3px;
+	text-align: justify;
+}
+p {
+	margin: 0 0 7px 7px;
+	text-align: justify;
+}
+ul {
+	margin: 0;
+	padding: 0 0 0 20px;
+	text-align: justify;
+	width: 80%;
+}
+li {
+	margin-bottom: 5px;
+	text-align: justify;
+}
+
+.contact {
+	margin-bottom: 20px;
+}
+.section {
+	margin-bottom: 30px;
+}
+.icon{
+	display: flex;
+	gap: 10px;
+}
+.company {
+	font-weight: 600;
+}
+h3.role{
+	font-weight: 700;
+	font-size: large;
+}
+.group {
+	display: flex;
+	justify-content: space-between;
+	
+}
+hr.solid {
+	border-top: 3px solid #303841;
+	border-radius: 5px;
+  }
+
+.material-icons {
+	color: #303841;
+}
+.group-inline{
+	display: flex;
+	justify-content: flex-start;
+}

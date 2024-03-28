@@ -77,12 +77,6 @@ i.material-icons {
 	color: #303841;
 	font-size: 20px;	
 }
-.skills{
-	display: flex;
-	flex-wrap: wrap;
-  	height: 400px;
-  	align-content: space-between;
-}
 a {
 	color: #516BEB;
 }
@@ -184,3 +178,14 @@ button.print-button {
     display: none;
   }
 	  }
+	  
+ .outer {
+		display: flex;
+		min-height: 100%;
+		flex-direction: column; /* added */
+		width: 85%;
+	  }
+
+#projects {
+	page-break-before: always;
+}

@@ -185,17 +185,15 @@ button.print-button {
 		flex-direction: column; /* added */
 	  }
 
-#projects {
+/* #projects {
 	page-break-before: always;
-}
+} */
 .blocks {
 	border-style: solid;
 	border-color: #303841;
 	border-radius: 25px;
 	padding-inline: 10px;
 	padding-block: 1px;
-	align-items: center;
-	justify-content: center;
 	
 }
 

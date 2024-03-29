@@ -10,7 +10,7 @@ body {
 	margin-right: auto;
 	background-color: #F5F5F5;
 	color: #303841;
-	min-width: 500px;
+	min-width: 700px;
 }
 h1, h2, h3 {
 	margin: 0;
@@ -80,7 +80,7 @@ a {
 	color: #516BEB;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1000px) {
 	body{
 		width: 40%;
 	}

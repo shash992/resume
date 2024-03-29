@@ -183,9 +183,22 @@ button.print-button {
 		display: flex;
 		min-height: 100%;
 		flex-direction: column; /* added */
-		width: 85%;
 	  }
 
 #projects {
 	page-break-before: always;
+}
+.blocks {
+	border-style: solid;
+	border-color: #303841;
+	border-radius: 25px;
+	padding-inline: 10px;
+	padding-block: 1px;
+	
+}
+
+.item {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
 }

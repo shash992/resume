@@ -194,6 +194,8 @@ button.print-button {
 	border-radius: 25px;
 	padding-inline: 10px;
 	padding-block: 1px;
+	align-items: center;
+	justify-content: center;
 	
 }
 

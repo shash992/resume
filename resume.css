@@ -74,10 +74,36 @@ hr.solid {
 
 i.material-icons {
 	color: #303841;
-	font-size: 20px;	
+	font-size: 20px;
+	align-content: center;	
 }
 a {
-	color: #516BEB;
+	text-decoration: none;
+	color: #303841;
+	font-weight: 700;
+  position: relative;
+}
+
+a::before {
+  content: '';
+  background-color: #303841;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 2px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+a:hover::before {
+  bottom: 0;
+  height: 85%;
+}
+
+a:hover {
+	color: #F5F5F5;
+	transition: all .3s ease-in-out;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -198,15 +224,14 @@ button.print-button {
 .blocks {
 	border-style: solid;
 	border-color: #303841;
-	border-radius: 25px;
 	padding-inline: 10px;
 	padding-block: 1px;
 	align-content: center;
-	
+	box-shadow: 3px 3px 0 #888888;	
 }
 
 .item {
 	display: flex;
 	flex-direction: row;
-	gap: 4px;
+	gap: 5px;
 }

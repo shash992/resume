@@ -111,11 +111,6 @@ a:hover {
 		width: 40%;
 	}
 }
-@media only screen and (max-width: 800px) {
-	body,h1,h2,h3,h3.role,i.material-icons{
-		font-size: 60%;
-	}
-}
 hr.dotted {
 	border-top: 2px dotted #bbb;
 	margin: 10px;

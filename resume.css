@@ -230,3 +230,37 @@ button.print-button {
 	flex-direction: row;
 	gap: 5px;
 }
+
+		.education-entry {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			margin-bottom: 5px;
+		}
+		.education-entry h3 {
+			font-style: italic;
+			margin: 0;
+		}
+		.education-details {
+			display: flex;
+			flex-direction: column;
+			margin-left: 10px;
+		}
+		.education-gpa {
+			margin-top: 5px;
+		}
+
+		.experience-entry {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			margin-bottom: 5px;
+		}
+		.experience-entry h3 {
+			font-weight: bold;
+			margin: 0;
+		}
+		.experience-details {
+			font-style: italic;
+			margin: 0;
+		}

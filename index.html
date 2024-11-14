@@ -5,8 +5,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-CompatibIe" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shashank's Resume</title>
 	<link rel="icon" type="image/x-icon" href="favicon.ico?">
 	
@@ -30,7 +29,8 @@
 		</div>
 	</div>
 	</div>
-	<button class="print-button" onclick="window.open('https://github.com/shash992/resume/raw/main/resume.pdf', '_blank');"><span class="print-icon"></span></button>	
+	<button class="print-button" onclick="window.open('https://github.com/shash992/resume/raw/main/resume.pdf', '_blank');" onmouseover="document.getElementById('tooltip').style.display='block';" onmouseout="document.getElementById('tooltip').style.display='none';"><span class="print-icon"></span></button>
+<div id="tooltip" style="display:none; position: absolute; background: #303841; color: #ffffff; padding: 5px; border-radius: 3px; top: 120%; left: 50%; transform: translateX(-50%);">Download my resume</div>		
 	</div>
 	<hr class="solid">
 

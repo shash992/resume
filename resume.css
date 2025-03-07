@@ -237,3 +237,8 @@ body {
 			font-style: italic;
 			margin: 0;
 		}
+
+.experience-entry > div:first-child > p:nth-of-type(2) {
+    gap: 5px
+}
+

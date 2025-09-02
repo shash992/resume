@@ -20,12 +20,20 @@
 			<a href="https://www.linkedin.com/in/saishashankk/">LinkedIn</a>
 		</div>
 		<div class="icon">
+			<i class="material-icons">code</i>
+			<a href="https://github.com/shash992">GitHub</a>
+		</div>
+		<div class="icon">
 			<i class="material-icons">local_phone</i>
 			<a href="tel:+12405052480">+1 (240) 505-2480</a>
 		</div>
 		<div class="icon">
 			<i class="material-icons">email</i>
 			<a href="mailto:skudkuli@umd.edu">skudkuli@umd.edu</a>
+		</div>
+		<div class="icon">
+			<i class="material-icons">place</i>
+			<span>College Park, MD 20740</span>
 		</div>
 	</div>
 	</div>
@@ -40,18 +48,17 @@
 		<h2>EDUCATION</h2>
 		<div class="education-entry">
 			<div class="education-details">
-				<p><strong>University of Maryland, Robert H Smith School of Business</strong></p>
+				<p><strong>University of Maryland</strong></p>
 				<p>College Park, MD</p>
 				<p>Master of Science in Information Systems</p>
 			</div>
 			<div>
 				<p>December 2025</p>
-				<p class="education-gpa">GPA: 3.88/4.00</p>
+				<p class="education-gpa">GPA: 3.934/4.00</p>
 			</div>
 		</div>
 		<ul>
-			<li>Graduate Research Assistantship</li>
-			<li>Relevant Coursework: Database Management Systems, Project Management in Dynamic Environments, Data Modelling and Decisions using R, Data Processing and Analysis in Python, Project Management</li>
+			<li>Coursework: Digital Business Transformation, Business Process Analysis, Data Visualization, Project Management, Cloud Computing and Big Data, Statistical Analysis with R</li>
 		</ul>
 		<hr class="dotted">
 		<div class="education-entry">
@@ -82,21 +89,21 @@
 			<p>November 2024 - Present</p>
 		</div>
 		<ul>
-			<li>Optimized complex queries in Snowflake SQL, enhancing data extraction efficiency by 30%, which resulted in the generation of monthly reports for the AI Jobs Dashboard that supported strategic decision-making for various research initiatives.</li>
-			<li>Developed and executed batch processing scripts utilizing Polars and NumPy, enabling analysis of over 100 million records with a turnaround time reduced by 87.5%, leading to the extraction of actionable research insights that informed key research initiatives.</li>
-			<li>Constructed robust ETL pipelines leveraging Snowflake database management system and Python, facilitating seamless data integration and data interpretation from five disparate sources while generating critical insights for research purposes.</li>
+			<li>Optimized Snowflake SQL queries and built batch processing pipelines using Polars, reducing data processing time from 2 hours to 15 minutes for 100M+ job market records.</li>
+			<li>Developed ETL systems integrating 5 disparate data sources to support the AI Jobs Dashboard for labor market research.</li>
+			<li>Designed and implemented LLM evaluation pipelines benchmarking GPT-4, Claude, Llama-3, and Qwen on a 10K+ job-posting dataset; insights adopted in academic research and CNN/WSJ-featured reports.</li>
 		</ul>
 		<hr class="dotted">
 		<div class="experience-entry">
 			<div>
 				<p><strong>Oracle Cerner, Bengaluru, India</strong></p>
-				<p class="experience-details">System Engineer I</p>
+				<p class="experience-details">System Engineer</p>
 			</div>
 			<p>September 2022 - December 2023</p>
 		</div>
 		<ul>
-			<li>Provided on-call support for critical Linux application issues, mitigating unplanned downtime and ensuring 24/7 operations for hospitals.</li>
-			<li>Executed maintenance on Sybase Database servers that helped performance optimization for clients.</li>
+			<li>Resolved critical Linux application and Sybase database issues for hospital systems, reducing incident tickets from 20 to 5 per week while maintaining 24/7 availability.</li>
+			<li>Collaborated with client IT teams to troubleshoot server incidents, achieving a 75% improvement in mean time to resolution.</li>
 		</ul>
 		<hr class="dotted">
 		<div class="experience-entry">
@@ -107,9 +114,8 @@
 			<p>July 2021 - July 2022</p>
 		</div>
 		<ul>
-			<li>Performed quarterly supply chain financial analysis to find anomalies with Excel.</li>
-			<li>Compiled knowledge base and SOP articles during the transition from a legacy Incident Management portal to ServiceNow, reducing SOP violations and incident creations by 80%.</li>
-			<li>Onboarded and trained new hires in client business processes and SAP systems, optimizing team dynamics and reducing incident turnaround time by 5 business days.</li>
+			<li>Analyzed and resolved 500+ SAP Warehouse Management issues, maintaining 95% SLA compliance for supply chain operations.</li>
+			<li>Created Standard Operating Procedures during the ServiceNow migration, reducing process violations by 80%.</li>
 		</ul>
 	</div>
 	<hr class="solid">
@@ -117,12 +123,21 @@
 	<div class="section" id="projects">
 		<h2>PROJECTS</h2>
 		<div class="group">
-			<h3>Forecasting Flames: Predictive Modeling for California Wildfire Risks</h3>
-			<p>August 2024 - December 2024</p>
+			<h3>Dynamic Surge Pricing using Regression</h3>
+			<p>May 2023 - August 2023</p>
 		</div>
 		<ul>
-			<li>Built and optimized predictive models using Random Forest, SVM, and ensemble learning to assess wildfire risk, improving recall for no-fire days with SMOTE and feature importance analysis.</li>
-			<li>Integrated and processed NASA MODIS satellite data with climatic and geographical variables, applying SHAP explainability techniques to identify key wildfire risk factors for disaster preparedness.</li>
+			<li>Built a PySpark regression model on the Seattle parking dataset to predict availability and apply surge pricing rules, trained on 2022 data and deployed for 2023 live stream.</li>
+			<li>Containerized the pipeline with Docker, deployed on Vertex AI, automated ingestion via Pub/Sub with results stored in BigQuery, and visualized live surge pricing on Streamlit.</li>
+		</ul>
+		<div class="group">
+			<h3>Graph Search MCP <a href="https://github.com/shash992/graph-search-mcp" target="_blank" rel="noopener noreferrer">(GitHub)</a></h3>
+			<p>June 2025</p>
+		</div>
+		<ul>
+			<li>Built an AI-ready knowledge graph platform by integrating Neo4j with LLMs via the Model Context Protocol (MCP), enabling scalable natural-language queries over graph data; containerized and deployed with Docker.</li>
+			<li>Fine-tuned the Gemma 3n model using LoRA optimization on relationship data, improving relation extraction and understanding accuracy.</li>
+			<li>Developed and evaluated hybrid graph + LLM retrieval systems, combining symbolic traversal with neural reasoning; achieved a 73% improvement in retrieval accuracy over vector-only baselines.</li>
 		</ul>
 	</div>
 	<hr class="solid">
@@ -130,8 +145,10 @@
 	<div class="section">
 		<h2>SKILLS</h2>
 		<ul>
-			<li><b>Technical Skills:</b> Snowflake, Microsoft Excel, Python, R, R Studio, Project Libre, Microsoft SQL, Tableau, CRON, Functional Programming, SAP Materials Management</li>
-			<li><b>Soft Skills:</b> Leadership, Team Player, Technical Communication, Self Learning, Cross-functional Collaboration</li>
+			<li><b>Core Data &amp; Analytics:</b> Python, SQL, R, Polars, Spark, Snowflake, HiveQL, Tableau, Power BI, Excel</li>
+			<li><b>AI/ML:</b> LLM Evaluation, Prompt Engineering, Retrieval-Augmented Generation (RAG), Neo4j, HuggingFace Transformers, Fine-tuning (Gemma) using LoRA, Streamlit</li>
+			<li><b>Cloud &amp; Infrastructure:</b> AWS, GCP, Azure, Docker, HDFS, Git, CI/CD, CRON</li>
+			<li><b>Business Tools:</b> Microsoft Project, Feasibility Analysis, Functional Modeling, Process Documentation</li>
 		</ul>
 	</div>
 	<hr class="solid">
@@ -139,10 +156,14 @@
 	<div class="section">
 		<h2>LEADERSHIP & ACTIVITIES</h2>
 		<ul>
-			<li>Smith Information Systems Masters Students Association, College Park, MD - VP Finance (September 2024 - Present)</li>
-			<li>Winner of AI in Business Case Competition for innovative use of AI in digital business strategy, conducted by RH Smith School of Business, Nov 2024.</li>
-			<li>"Accenture Celebrates Excellence" award, ranking in the 90th percentile of freshers for FY 2021-2022.</li>
-			<li>"Stakeholder Recognition Award for Excellence in Support" at Oracle Cerner, May 2023.</li>
+			<li>Smith Master's IS Association, College Park, MD - VP Finance (January 2025 - Present)
+				<ul>
+					<li>Developed mentorship program connecting 100+ students and alumni. <a href="https://www.rhsmith.umd.edu/news/msis-mentorship-program-uses-ai-strengthen-alumni-student-connections" target="_blank" rel="noopener noreferrer">Featured in university article for AI integration.</a></li>
+				</ul>
+			</li>
+			<li>Winner: AI in Business Case Competition — Designed AI integration strategy for digital business transformation (November 2024).</li>
+			<li>Oracle Cerner: Stakeholder Recognition Award — Service excellence in resolving critical hospital system outages (2023).</li>
+			<li>Accenture: "Celebrates Excellence" Award — Top 10% of analyst cohort for exceptional performance (2022).</li>
 		</ul>
 	</div>
 	<hr class="solid">

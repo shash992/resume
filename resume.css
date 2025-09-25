@@ -178,10 +178,17 @@ li + li {
 }
 
 .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
 
 .hero-cta {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
 .cta-button {
@@ -202,9 +209,6 @@ li + li {
 .cta-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 16px 26px rgba(63, 67, 255, 0.3);
-}
-    justify-content: space-between;
-    gap: 24px;
 }
 
 .contact-grid {
@@ -351,9 +355,15 @@ li + li {
         padding-top: 190px;
     }
 
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     .hero-cta {
         width: 100%;
         justify-content: flex-start;
+        margin-left: 0;
     }
 
     .cta-button {

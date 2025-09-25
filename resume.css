@@ -178,6 +178,31 @@ li + li {
 }
 
 .hero {
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 20px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0 12px 22px rgba(63, 67, 255, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 26px rgba(63, 67, 255, 0.3);
+}
     justify-content: space-between;
     gap: 24px;
 }
@@ -324,6 +349,16 @@ li + li {
     .page-wrapper {
         gap: 16px;
         padding-top: 190px;
+    }
+
+    .hero-cta {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
     }
 
     .card {

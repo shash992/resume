@@ -1,3 +1,3 @@
 # Resume of Mine
 
-[resume.shashankk.work](https://shanks.is-a.dev)
+[shanks.is-a.dev](https://shanks.is-a.dev)

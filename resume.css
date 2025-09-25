@@ -99,6 +99,10 @@ body {
 			color: #F5F5F5;
 			transition: all .3s ease-in-out;
 		}
+		.article-link:hover {
+			color: #303841;
+			font-style: italic;
+		}
 		@media only screen and (min-width: 1000px) {
 			body {
 				width: 40%;

@@ -1,137 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="resume.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<meta charset="UTF-8">
-    <meta http-equiv="X-UA-CompatibIe" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shashank's Resume</title>
-	<link rel="icon" type="image/x-icon" href="favicon.ico?">
+    <title>Sai Shashank Kudkuli · Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico?">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="resume.css">
 </head>
 <body>
-	<div class="group">
-	<div>
-	<h1>Kudkuli Sai Shashank</h1>
-	<div class="contact">
-		<div class="icon">
-			<i class="material-icons" >insert_link</i>
-			<a href="https://www.linkedin.com/in/saishashankk/">LinkedIn</a>
-		</div>
-		<div class="icon">
-			<i class="material-icons" >local_phone</i>
-			<a href="tel:+919901913686">+91 9901913686</a>
-		</div>
-		<div class="icon">
-			<i class="material-icons" >email</i>
-			<a href="mailto:kudkuli.shashank@gmail.com">kudkuli.shashank@gmail.com</a>
-		</div>
-	</div>
-	</div>
-	<button class="print-button" onClick="window.print()"><span class="print-icon"></span></button>	
-	</div>
-	<hr class="solid">
+    <div class="top-spacer" aria-hidden="true"></div>
+        <div class="page-wrapper">
+        <div class="top-bar">
+            <span class="top-bar__name">Sai Shashank Kudkuli</span>
+            <nav class="top-bar__links">
+                <a href="mailto:shashkudkuli@gmail.com" class="top-link">
+                    <span class="material-icons-outlined">mail</span>
+                    <span>shashkudkuli@gmail.com</span>
+                </a>
+                <a href="tel:+12405052480" class="top-link">
+                    <span class="material-icons-outlined">call</span>
+                    <span>+1 (240) 505-2480</span>
+                </a>
+                <div class="top-link">
+                    <span class="material-icons-outlined">place</span>
+                    <span>College Park, MD 20740</span>
+                </div>
+                <a href="https://www.linkedin.com/in/saishashankk/" class="top-link" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons-outlined">link</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/shash992" class="top-link" target="_blank" rel="noopener noreferrer">
+                    <span class="material-icons-outlined">code</span>
+                    <span>GitHub</span>
+                </a>
+            </nav>
+        </div>
 
-		<div class="section">
-		<h2>EDUCATION</h2>
-		<div class="group">
-			<h3>MS Inforamtion Systems</h3>
-			<p>Aug 2024 - Present</p>
-		</div>
-		<p>PES University, Bengaluru, KA, India</p>
-		<hr class="dotted">
-		<div class="group">
-			<h3>Bachelor of Technology, Electronics and Communication Engineering</h3>
-			<p>Aug 2017 - May 2021</p>
-		</div>
-		<p>PES University, Bengaluru, KA, India</p>
-		
+        <main class="page-grid">
+            <header class="card card--wide hero">
+                <div>
+                    <h1>Data &amp; AI Systems Professional</h1>
+                    <p class="lead">Designing scalable analytics platforms and human-centered AI solutions for business impact.</p>
+                </div>
+                <div class="hero-cta">
+                    <a class="cta-button" href="https://github.com/shash992/resume/raw/main/Sai_Shashank_Kudkuli_.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+                </div>
+            </header>
 
-	<hr class="solid">
-	
-	<div class="section">
-		<h2>EXPERIENCE</h2>
-		<div class="group">
-			<h3 class="role">System Engineer I</h3>
-			<p>Sept 2022 - Present</p>
-		</div>
-		<p class="company">Oracle Cerner, Bangalore</p>
-		<ul>
-			<li>Performed routine preventive checks on servers to ensure reliable systems.</li>
-			<li>Provided on-call support for critical Linux application issues, mitigating downtime and ensuring continuous operations for hospitals.</li>
-			<li>Executed maintenance on Sybase Database servers that helped performance optimization for clients.</li>
-		</ul>
-		<hr class="dotted">
-		<div class="group">
-			<h3 class="role">Associate Software Engineer</h3>
-			<p>July 2021 - July 2022</p>
-		</div>
-		<p class="company">Accenture Solutions Pvt. Ltd., Bangalore</p>
-		<ul>
-			<li>Provided on-call support for critical SAP Warehouse Management incidents, preventing supply chain disruptions for the client.</li>
-			<li>Compiled knowledge base and SOP articles during the transition from a legacy Incident Management portal to ServiceNow, reducing SOP violations and incident creations by 80%.</li>
-			<li>Onboarded and trained new hires in client business processes and SAP systems, optimizing team dynamics and reducing incident turnaround time by 5 business days.</li>
-		</ul>
-	</div>
-	<hr class="solid">
+            <section class="card" id="skills">
+                <h2>Skills Snapshot</h2>
+                <div class="skill-grid">
+                    <div class="skill-tile">
+                        <span class="label">Core Data &amp; Analytics</span>
+                        <p>Python, SQL, R, Polars, Spark, Snowflake, HiveQL, Tableau, Power BI, Excel</p>
+                    </div>
+                    <div class="skill-tile">
+                        <span class="label">AI &amp; ML</span>
+                        <p>LLM Evaluation, Prompt Engineering, RAG, Neo4j, N8N, HuggingFace Transformers, LoRA Fine-tuning (Gemma), Streamlit</p>
+                    </div>
+                    <div class="skill-tile">
+                        <span class="label">Cloud &amp; Infra</span>
+                        <p>AWS, GCP, Azure, Docker, HDFS, Git, CI/CD, CRON</p>
+                    </div>
+                    <div class="skill-tile">
+                        <span class="label">Business</span>
+                        <p>Microsoft Project, Feasibility Analysis, Functional Modeling, Process Documentation</p>
+                    </div>
+                </div>
+            </section>
 
-	<div class="section" id="projects">
-		<h2>PROJECTS</h2>
-		<div class="group">
-		<h3>Design of vehicular fog computing system</h3>
-		<p>Aug 2020 - May 2021</p>
-		</div>
-		<ul>
-			<li>Designed and simulated a traffic network using python that used Edge Computing for transmitting route data to vehicles.</li>
-			<li>Implemented Jackson's Network Equations in MATLAB to validate the accuracy and robustness of the simulation results, ensuring the system's reliability</li>
-			<li>Conducted in-depth analysis using Python's Matplotlib library to investigate the trade-offs between data transmission reliability and rate, optimizing the system's performance while maintaining quality of service.</li>
-		</ul>
-		<p>Guide: Dr. Vamsi Krishna Tumuluru, PES University, Bangalore</p>
-	</div>
-	<hr class="solid">
+            <section class="card" id="education">
+                <h2>Education</h2>
+                <div class="card-block">
+                    <div class="card-heading">
+                        <div>
+                            <h3>University of Maryland</h3>
+                            <p>Master of Science, Information Systems</p>
+                        </div>
+                        <div class="meta">
+                            <span>Aug 2024 – Dec 2025</span>
+                            <span>College Park, MD, USA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-block">
+                    <div class="card-heading">
+                        <div>
+                            <h3>PES University</h3>
+                            <p>Bachelor of Technology, Electronics and Communication</p>
+                        </div>
+                        <div class="meta">
+                            <span>Aug 2017 – Dec 2021</span>
+                            <span>Bengaluru, KA, India</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
+            <section class="card" id="experience">
+                <h2>Experience</h2>
+                <div class="card-block">
+                    <div class="card-heading">
+                        <div>
+                            <h3>Research Assistant</h3>
+                            <p>R.H. Smith School of Business · University of Maryland</p>
+                        </div>
+                        <div class="meta">
+                            <span>Nov 2024 – Present</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Optimized Snowflake SQL workflows and engineered Polars batch pipelines, reducing end-to-end processing for 100M+ job market records from 2 hours to 15 minutes.</li>
+                        <li>Curated and transformed domain-specific datasets for LLM fine-tuning, improving downstream model performance and context relevance.</li>
+                        <li>Designed and implemented LLM evaluation pipelines benchmarking GPT-4, Claude, Llama-3, and Qwen across 10K+ job postings; insights informed academic research and CNN/WSJ-featured reports.</li>
+                        <li>Built ETL systems integrating five disparate data sources to support the AI Jobs Dashboard for labor market research.</li>
+                    </ul>
+                    <a class="inline-link" href="https://aimaps.ai/" target="_blank" rel="noopener noreferrer">UMD-LinkUp AI Maps Project</a>
+                </div>
+                <div class="card-block">
+                    <div class="card-heading">
+                        <div>
+                            <h3>System Engineer</h3>
+                            <p>Oracle Cerner · Bengaluru</p>
+                        </div>
+                        <div class="meta">
+                            <span>Sep 2022 – Dec 2023</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Resolved critical Linux application and Sybase database issues for hospital systems, reducing incident tickets from 20 to 5 per week while maintaining 24/7 availability.</li>
+                        <li>Collaborated with client IT teams to troubleshoot server incidents, achieving a 75% improvement in mean resolution time.</li>
+                    </ul>
+                </div>
+                <div class="card-block">
+                    <div class="card-heading">
+                        <div>
+                            <h3>SAP Consultant</h3>
+                            <p>Accenture · Bengaluru</p>
+                        </div>
+                        <div class="meta">
+                            <span>Jul 2021 – Jul 2022</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Analyzed and resolved 500+ SAP issues, maintaining 95% SLA compliance for supply chain operations.</li>
+                        <li>Created Standard Operating Procedures during a ServiceNow migration, reducing process violations by 80%.</li>
+                    </ul>
+                </div>
+            </section>
 
-	<div class="section">
-		<h2>SKILLS</h2>
-		<div class="outer">
-			  <div class="item"><h3>Languages/Frameworks:</h3></div>
-			  <div class="item">
-				<div class="blocks"><p>SQL, Python, Pandas</p></div>
-			  </div>
-			  <div class="item"><h3>Applications:</h3></div>
-			  <div class="item">
-				<div class="outer">
-					<div class="blocks">
-						<div class="item"><p>SAP Materials Management,</p></div>
-						<div class="item"><p> SAP Warehouse Management</p></div>
-					</div>
-				</div>
-				<div class="blocks" ><p>Vi/Vim</p></div>
-				<div class="outer">
-					<div class="blocks">
-						<div class="item"><p>Microsoft-Excel,</p></div>
-						<div class="item"><p> Microsoft Powerpoint</p></div>
-						<div class="item">Tableau<p></p></div>
-					</div>
-				</div>
-			  </div>
-			  <div class="item"><h3>Operating Systems:</h3></div>
-			  <div class="item">
-			  	<div class="blocks"><p>Windows, Linux</p></div>
-			  </div>
-		  </div>
-	</div>
-	<hr class="solid">
+            <section class="card" id="projects">
+                <h2>Projects</h2>
+                <div class="card-block">
+                    <div class="card-heading">
+                        <div>
+                            <h3>Graph Search MCP</h3>
+                            <p>AI-ready knowledge graph platform</p>
+                        </div>
+                        <div class="meta">
+                            <span>Jun 2025</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Built an AI-ready knowledge graph platform by integrating Neo4j with LLMs via the Model Context Protocol (MCP); containerized with Docker for consistency and portability.</li>
+                        <li>Fine-tuned Gemma 3n using LoRA optimization on relationship data, improving relation extraction accuracy.</li>
+                        <li>Developed hybrid graph + LLM retrieval systems that combined symbolic traversal with neural reasoning, achieving a 73% lift over vector-only baselines.</li>
+                    </ul>
+                    <a class="inline-link" href="https://github.com/shash992/graph-search-mcp" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                </div>
+                <div class="card-block">
+                    <div class="card-heading">
+                        <div>
+                            <h3>Asha IT Recruitment Platform</h3>
+                            <p>AI-driven hiring workflows for small businesses</p>
+                        </div>
+                        <div class="meta">
+                            <span>Jan 2025 – Dec 2025</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Architected an AI recruitment platform using AWS Amplify, Lambda, and DynamoDB, integrating Firebase Authentication for secure user management.</li>
+                        <li>Implemented agentic AI pipelines that matched candidates to roles with LLM-based skill extraction, resume–JD reasoning, and multi-agent ranking.</li>
+                        <li>Optimized Lambda-based inference latency by 42% through asynchronous invocation patterns and caching layers.</li>
+                    </ul>
+                    <a class="inline-link" href="https://ashait.com" target="_blank" rel="noopener noreferrer">Visit ashait.com</a>
+                </div>
+                <div class="card-block">
+                    <div class="card-heading">
+                        <div>
+                            <h3>Dynamic Surge Pricing</h3>
+                            <p>Predictive parking demand with PySpark</p>
+                        </div>
+                        <div class="meta">
+                            <span>May 2023 – Aug 2023</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Built a PySpark regression model on Seattle parking data to predict availability and apply surge pricing rules for 2023 live streams.</li>
+                        <li>Containerized the pipeline with Docker, deployed on Vertex AI, and automated ingestion via Pub/Sub with results in BigQuery.</li>
+                        <li>Visualized surge pricing outputs on Streamlit and monitored reliability through Cloud Logging.</li>
+                    </ul>
+                </div>
+            </section>
 
-	<div class="section">
-		<h2>Extra Curricular and Achivements</h2>
-		<ul>
-			<li>Top 10 in Equinox Essay writing competition at the college level.</li>
-			<li>Volunteered at College Science Fest (The Amature Scientist) as part of logistics for the event.</li>
-			<li>Member of Bangalore Toastmasters Club, St.Marks Road where I participated in speeches and other activities.</li>
-		</ul>
-	</div>
-	<hr class="solid">
-	
+            <section class="card" id="leadership">
+                <h2>Leadership &amp; Recognition</h2>
+                <div class="card-block">
+                    <h3>Smith Master's IS Association · VP Finance</h3>
+                    <p>Jan 2025 – Present · Developed a mentorship program connecting 100+ students and alumni; featured for AI-driven engagement.</p>
+                    <a class="inline-link" href="https://www.rhsmith.umd.edu/news/msis-mentorship-program-uses-ai-strengthen-alumni-student-connections" target="_blank" rel="noopener noreferrer">University Article</a>
+                </div>
+                <div class="card-block">
+                    <h3>AI in Business Case Competition Winner</h3>
+                    <p>Nov 2024 · Designed an AI integration strategy enabling small businesses to automate operations and customer insights.</p>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

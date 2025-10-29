@@ -18,7 +18,7 @@
 body {
     margin: 0;
     padding: 32px;
-    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-family: "Space Grotesk", Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
     display: flex;
@@ -33,7 +33,6 @@ body {
     gap: 24px;
     padding-top: 140px;
 }
-
 
 .top-spacer {
     position: fixed;
@@ -63,7 +62,9 @@ body {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-radius: 16px;
-    box-shadow: 6px 6px 0 var(--shadow-offset), 0 16px 32px var(--shadow);
+    box-shadow:
+        6px 6px 0 var(--shadow-offset),
+        0 16px 32px var(--shadow);
 }
 
 .top-bar__name {
@@ -92,7 +93,9 @@ body {
     text-decoration: none;
     color: var(--text);
     font-size: 0.95rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .top-link:hover {
@@ -118,7 +121,9 @@ body {
     border: 2px solid var(--border);
     border-radius: 16px;
     padding: 24px;
-    box-shadow: 6px 6px 0 var(--shadow-offset), 0 16px 32px var(--shadow);
+    box-shadow:
+        6px 6px 0 var(--shadow-offset),
+        0 16px 32px var(--shadow);
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -128,7 +133,9 @@ body {
     grid-column: 1 / -1;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 0;
     color: var(--text);
 }
@@ -203,7 +210,9 @@ li + li {
     letter-spacing: 1px;
     text-decoration: none;
     box-shadow: 0 12px 22px rgba(63, 67, 255, 0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .cta-button:hover {
@@ -227,7 +236,9 @@ li + li {
     text-decoration: none;
     color: inherit;
     background: white;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .contact-tile:hover {

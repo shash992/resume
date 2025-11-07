@@ -434,6 +434,8 @@
                 if (initialTheme) {
                     setTheme(initialTheme);
                 } else {
+                    // Ensure no data-theme attribute is set so CSS media query applies
+                    html.removeAttribute('data-theme');
                     // Use system preference and update icon
                     const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
                     updateIcon(systemDark ? 'dark' : 'light');
@@ -449,7 +451,9 @@
                 // Listen for system theme changes (only if no manual preference)
                 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
                     if (!localStorage.getItem('theme')) {
-                        // No manual preference, update icon to match system change
+                        // No manual preference, ensure data-theme is removed so CSS applies
+                        html.removeAttribute('data-theme');
+                        // Update icon to match system change
                         updateIcon(e.matches ? 'dark' : 'light');
                     }
                 });

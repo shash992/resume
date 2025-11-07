@@ -14,7 +14,8 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root:not([data-theme]) {
+    :root:not([data-theme]),
+    html:not([data-theme]) {
         --bg: #0a0a0a;
         --bg-tint: #0f0f0f;
         --card-bg: #141414;
@@ -26,6 +27,23 @@
         --accent-hover: #9B9BFF;
         --grid-dot: #2a2a2a;
         --card-grid: rgba(184, 184, 255, 0.08);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root:not([data-theme]),
+    html:not([data-theme]) {
+        --bg: #ffffff;
+        --bg-tint: #ffffff;
+        --card-bg: #ffffff;
+        --text: #1a1a1a;
+        --muted: #666666;
+        --border: #e0e0e0;
+        --primary: #2E2EFF;
+        --accent: #2E2EFF;
+        --accent-hover: #2525e6;
+        --grid-dot: #e5e5e5;
+        --card-grid: rgba(46, 46, 255, 0.03);
     }
 }
 

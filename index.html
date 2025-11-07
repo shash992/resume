@@ -54,6 +54,9 @@
                         <span class="material-icons-outlined">code</span>
                         <span>GitHub</span>
                     </a>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <span class="material-icons-outlined" id="theme-icon">dark_mode</span>
+                    </button>
                 </nav>
             </div>
 
@@ -375,5 +378,82 @@
                 </section>
             </main>
         </div>
+        <script>
+            (function() {
+                const themeToggle = document.getElementById('theme-toggle');
+                const themeIcon = document.getElementById('theme-icon');
+                const html = document.documentElement;
+
+                // Get saved theme or default to system preference
+                function getInitialTheme() {
+                    const savedTheme = localStorage.getItem('theme');
+                    if (savedTheme) {
+                        return savedTheme;
+                    }
+                    // No saved preference, use system theme (don't set data-theme)
+                    return null;
+                }
+
+                // Update theme
+                function setTheme(theme) {
+                    if (theme === 'dark' || theme === 'light') {
+                        html.setAttribute('data-theme', theme);
+                        localStorage.setItem('theme', theme);
+                        updateIcon(theme);
+                    } else {
+                        // Remove data-theme to use system preference
+                        html.removeAttribute('data-theme');
+                        localStorage.removeItem('theme');
+                        // Update icon based on system preference
+                        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                        updateIcon(systemDark ? 'dark' : 'light');
+                    }
+                }
+
+                // Update icon based on current theme
+                function updateIcon(theme) {
+                    if (theme === 'dark') {
+                        themeIcon.textContent = 'light_mode';
+                    } else {
+                        themeIcon.textContent = 'dark_mode';
+                    }
+                }
+
+                // Get current effective theme
+                function getCurrentTheme() {
+                    const dataTheme = html.getAttribute('data-theme');
+                    if (dataTheme) {
+                        return dataTheme;
+                    }
+                    // Return system preference
+                    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                }
+
+                // Initialize theme on load
+                const initialTheme = getInitialTheme();
+                if (initialTheme) {
+                    setTheme(initialTheme);
+                } else {
+                    // Use system preference and update icon
+                    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                    updateIcon(systemDark ? 'dark' : 'light');
+                }
+
+                // Handle toggle button click
+                themeToggle.addEventListener('click', function() {
+                    const currentTheme = getCurrentTheme();
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    setTheme(newTheme);
+                });
+
+                // Listen for system theme changes (only if no manual preference)
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+                    if (!localStorage.getItem('theme')) {
+                        // No manual preference, update icon to match system change
+                        updateIcon(e.matches ? 'dark' : 'light');
+                    }
+                });
+            })();
+        </script>
     </body>
 </html>

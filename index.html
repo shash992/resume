@@ -384,77 +384,87 @@
                 const themeIcon = document.getElementById('theme-icon');
                 const html = document.documentElement;
 
-                // Get saved theme or default to system preference
-                function getInitialTheme() {
-                    const savedTheme = localStorage.getItem('theme');
-                    if (savedTheme) {
-                        return savedTheme;
+                // Migrate old theme preference to new theme-mode
+                function migrateOldTheme() {
+                    const oldTheme = localStorage.getItem('theme');
+                    if (oldTheme && !localStorage.getItem('theme-mode')) {
+                        // Migrate old preference
+                        localStorage.setItem('theme-mode', oldTheme);
+                        localStorage.removeItem('theme');
+                        return oldTheme;
                     }
-                    // No saved preference, use system theme (don't set data-theme)
                     return null;
                 }
 
-                // Update theme
-                function setTheme(theme) {
-                    if (theme === 'dark' || theme === 'light') {
-                        html.setAttribute('data-theme', theme);
-                        localStorage.setItem('theme', theme);
-                        updateIcon(theme);
+                // Get saved theme mode or default to system
+                function getSavedThemeMode() {
+                    // Check for old theme preference and migrate
+                    const migrated = migrateOldTheme();
+                    if (migrated) {
+                        return migrated;
+                    }
+                    const saved = localStorage.getItem('theme-mode');
+                    return saved || 'system';
+                }
+
+                // Update theme based on mode
+                function setThemeMode(mode) {
+                    if (mode === 'light') {
+                        html.setAttribute('data-theme', 'light');
+                        localStorage.setItem('theme-mode', 'light');
+                        updateIcon('light');
+                    } else if (mode === 'dark') {
+                        html.setAttribute('data-theme', 'dark');
+                        localStorage.setItem('theme-mode', 'dark');
+                        updateIcon('dark');
                     } else {
-                        // Remove data-theme to use system preference
+                        // System mode - remove data-theme to use CSS media query
                         html.removeAttribute('data-theme');
-                        localStorage.removeItem('theme');
-                        // Update icon based on system preference
-                        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                        updateIcon(systemDark ? 'dark' : 'light');
+                        localStorage.setItem('theme-mode', 'system');
+                        updateIcon('system');
                     }
                 }
 
-                // Update icon based on current theme
-                function updateIcon(theme) {
-                    if (theme === 'dark') {
+                // Update icon based on current mode
+                function updateIcon(mode) {
+                    if (mode === 'light') {
                         themeIcon.textContent = 'light_mode';
-                    } else {
+                    } else if (mode === 'dark') {
                         themeIcon.textContent = 'dark_mode';
+                    } else {
+                        // System mode
+                        themeIcon.textContent = 'brightness_auto';
                     }
                 }
 
-                // Get current effective theme
-                function getCurrentTheme() {
-                    const dataTheme = html.getAttribute('data-theme');
-                    if (dataTheme) {
-                        return dataTheme;
+                // Get next mode in cycle: light -> dark -> system -> light
+                function getNextMode(currentMode) {
+                    if (currentMode === 'light') {
+                        return 'dark';
+                    } else if (currentMode === 'dark') {
+                        return 'system';
+                    } else {
+                        return 'light';
                     }
-                    // Return system preference
-                    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
                 }
 
                 // Initialize theme on load
-                const initialTheme = getInitialTheme();
-                if (initialTheme) {
-                    setTheme(initialTheme);
-                } else {
-                    // Ensure no data-theme attribute is set so CSS media query applies
-                    html.removeAttribute('data-theme');
-                    // Use system preference and update icon
-                    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                    updateIcon(systemDark ? 'dark' : 'light');
-                }
+                const savedMode = getSavedThemeMode();
+                setThemeMode(savedMode);
 
-                // Handle toggle button click
+                // Handle toggle button click - cycle through modes
                 themeToggle.addEventListener('click', function() {
-                    const currentTheme = getCurrentTheme();
-                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-                    setTheme(newTheme);
+                    const currentMode = getSavedThemeMode();
+                    const nextMode = getNextMode(currentMode);
+                    setThemeMode(nextMode);
                 });
 
-                // Listen for system theme changes (only if no manual preference)
+                // Listen for system theme changes (only if in system mode)
                 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-                    if (!localStorage.getItem('theme')) {
-                        // No manual preference, ensure data-theme is removed so CSS applies
+                    const currentMode = getSavedThemeMode();
+                    if (currentMode === 'system') {
+                        // In system mode, ensure data-theme is removed so CSS applies
                         html.removeAttribute('data-theme');
-                        // Update icon to match system change
-                        updateIcon(e.matches ? 'dark' : 'light');
                     }
                 });
             })();

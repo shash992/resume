@@ -54,9 +54,6 @@
                         <span class="material-icons-outlined">code</span>
                         <span>GitHub</span>
                     </a>
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                        <span class="material-icons-outlined" id="theme-icon">dark_mode</span>
-                    </button>
                 </nav>
             </div>
 
@@ -378,96 +375,5 @@
                 </section>
             </main>
         </div>
-        <script>
-            (function() {
-                const themeToggle = document.getElementById('theme-toggle');
-                const themeIcon = document.getElementById('theme-icon');
-                const html = document.documentElement;
-
-                // Migrate old theme preference to new theme-mode
-                function migrateOldTheme() {
-                    const oldTheme = localStorage.getItem('theme');
-                    if (oldTheme && !localStorage.getItem('theme-mode')) {
-                        // Migrate old preference
-                        localStorage.setItem('theme-mode', oldTheme);
-                        localStorage.removeItem('theme');
-                        return oldTheme;
-                    }
-                    return null;
-                }
-
-                // Get saved theme mode or default to system
-                function getSavedThemeMode() {
-                    // Check for old theme preference and migrate
-                    const migrated = migrateOldTheme();
-                    if (migrated) {
-                        return migrated;
-                    }
-                    const saved = localStorage.getItem('theme-mode');
-                    return saved || 'system';
-                }
-
-                // Update theme based on mode
-                function setThemeMode(mode) {
-                    if (mode === 'light') {
-                        html.setAttribute('data-theme', 'light');
-                        localStorage.setItem('theme-mode', 'light');
-                        updateIcon('light');
-                    } else if (mode === 'dark') {
-                        html.setAttribute('data-theme', 'dark');
-                        localStorage.setItem('theme-mode', 'dark');
-                        updateIcon('dark');
-                    } else {
-                        // System mode - remove data-theme to use CSS media query
-                        html.removeAttribute('data-theme');
-                        localStorage.setItem('theme-mode', 'system');
-                        updateIcon('system');
-                    }
-                }
-
-                // Update icon based on current mode
-                function updateIcon(mode) {
-                    if (mode === 'light') {
-                        themeIcon.textContent = 'light_mode';
-                    } else if (mode === 'dark') {
-                        themeIcon.textContent = 'dark_mode';
-                    } else {
-                        // System mode
-                        themeIcon.textContent = 'brightness_auto';
-                    }
-                }
-
-                // Get next mode in cycle: light -> dark -> system -> light
-                function getNextMode(currentMode) {
-                    if (currentMode === 'light') {
-                        return 'dark';
-                    } else if (currentMode === 'dark') {
-                        return 'system';
-                    } else {
-                        return 'light';
-                    }
-                }
-
-                // Initialize theme on load
-                const savedMode = getSavedThemeMode();
-                setThemeMode(savedMode);
-
-                // Handle toggle button click - cycle through modes
-                themeToggle.addEventListener('click', function() {
-                    const currentMode = getSavedThemeMode();
-                    const nextMode = getNextMode(currentMode);
-                    setThemeMode(nextMode);
-                });
-
-                // Listen for system theme changes (only if in system mode)
-                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-                    const currentMode = getSavedThemeMode();
-                    if (currentMode === 'system') {
-                        // In system mode, ensure data-theme is removed so CSS applies
-                        html.removeAttribute('data-theme');
-                    }
-                });
-            })();
-        </script>
     </body>
 </html>

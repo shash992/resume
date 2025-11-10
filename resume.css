@@ -1,53 +1,4 @@
 :root {
-    --bg: #ffffff;
-    --bg-tint: #ffffff;
-    --card-bg: #ffffff;
-    --primary: #2E2EFF;
-    --text: #1a1a1a;
-    --muted: #666666;
-    --border: #e0e0e0;
-    --accent: #2E2EFF;
-    --accent-hover: #2525e6;
-    --grid-dot: #e5e5e5;
-    --card-grid: rgba(46, 46, 255, 0.03);
-    font-size: 16px;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root:not([data-theme]),
-    html:not([data-theme]) {
-        --bg: #0a0a0a;
-        --bg-tint: #0f0f0f;
-        --card-bg: #141414;
-        --text: #e5e5e5;
-        --muted: #b0b0b0;
-        --border: #2a2a2a;
-        --primary: #B8B8FF;
-        --accent: #B8B8FF;
-        --accent-hover: #9B9BFF;
-        --grid-dot: #2a2a2a;
-        --card-grid: rgba(184, 184, 255, 0.08);
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    :root:not([data-theme]),
-    html:not([data-theme]) {
-        --bg: #ffffff;
-        --bg-tint: #ffffff;
-        --card-bg: #ffffff;
-        --text: #1a1a1a;
-        --muted: #666666;
-        --border: #e0e0e0;
-        --primary: #2E2EFF;
-        --accent: #2E2EFF;
-        --accent-hover: #2525e6;
-        --grid-dot: #e5e5e5;
-        --card-grid: rgba(46, 46, 255, 0.03);
-    }
-}
-
-[data-theme="dark"] {
     --bg: #0a0a0a;
     --bg-tint: #0f0f0f;
     --card-bg: #141414;
@@ -59,20 +10,7 @@
     --accent-hover: #9B9BFF;
     --grid-dot: #2a2a2a;
     --card-grid: rgba(184, 184, 255, 0.08);
-}
-
-[data-theme="light"] {
-    --bg: #ffffff;
-    --bg-tint: #ffffff;
-    --card-bg: #ffffff;
-    --text: #1a1a1a;
-    --muted: #666666;
-    --border: #e0e0e0;
-    --primary: #2E2EFF;
-    --accent: #2E2EFF;
-    --accent-hover: #2525e6;
-    --grid-dot: #e5e5e5;
-    --card-grid: rgba(46, 46, 255, 0.03);
+    font-size: 16px;
 }
 
 * {
@@ -175,32 +113,6 @@ body {
     font-weight: 400;
 }
 
-.theme-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    border-radius: 0;
-    background: transparent;
-    border: 1px solid var(--border);
-    text-decoration: none;
-    color: var(--text);
-    font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    min-width: 36px;
-    min-height: 36px;
-}
-
-.theme-toggle:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-}
-
-.theme-toggle .material-icons-outlined {
-    font-size: 1.2rem;
-    color: inherit;
-}
 
 .page-grid {
     width: 100%;

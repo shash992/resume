@@ -1,104 +1,108 @@
-github.com/shash992 | (240) 505-2480 | linkedin.com/in/saishashankk | shashkudkuli@gmail.com | College Park, MD 20740
-
 Sai Shashank Kudkuli
+
+github.com/shash992 | (240) 505-2480 | linkedin.com/in/saishashankk | shashkudkuli@gmail.com | Bloomington, IN 47401
+
+Professional Summary
+
+I am an AI application developer specializing in end-to-end LLM-powered products and agentic systems. I design, build, and
+deploy AI applications, integrating large language models into real-world product workflows and business processes. My
+experience includes API development, event-driven architectures, scalable data pipelines, and distributed system deployment
+across cloud platforms.
+
+Technical Skills
+
+Languages: Python
+Frameworks: Pytorch, PostgreSQL, DynamoDB, Snowflake, BigQuery, Git, Data Structures & Algorithms
+AI/ML: LangChain, LangGraph, FastMCP, RAG, Vector Databases, n8n, Finetuning, Prompt Engineering
+Cloud: AWS (Lambda, API Gateway, S3, IAM), Docker, CI/CD, Nginx
 
 Education
 
 University of Maryland
 Master of Science, Information Systems
 
+August 2024 – December 2025
+CGPA 3.93/4
+
+• Winner: AI in Business Case Competition: Designed AI integration strategy for small businesses.
+
 PES University
 Bachelor of Technology, Electronics and Communication
 
-Technical Skills
-
-August 2024 - December 2025
-College Park, MD, USA
-
-August 2017 - December 2021
+August 2017 – December 2021
 Bengaluru, KA, India
-
-Core Data & Analytics: Python, SQL, R, Polars, Spark, Snowflake, HiveQL, Tableau, Power BI, Excel
-AI/ML: LLM Evaluation, Prompt Engineering, Retrieval-Augmented Generation (RAG), Neo4j, N8N, HuggingFace
-Transformers, Fine-tuning (Gemma) using LORA optimization, Streamlit
-Cloud & Infrastructure: AWS, GCP, Azure, Docker, HDFS, Git, CI/CD, CRON, Docker
-Business Tools: Microsoft Project, Feasibility Analysis, Functional Modeling, Process Documentation
 
 Experience
 
-R.H. Smith School of Business | Research Assistant | Snowflake, Transformers | aimaps.ai
+R.H. Smith School of Business | Data and System Analyst | aimaps.ai
 
-November 2024 - Present
-• Optimized Snowflake SQL workflows and engineered batch data pipelines using Polars, reducing end-to-end processing
+November 2024 – Present
+• Developed large-scale evaluation pipelines in Python, benchmarking Open and Closed Source AI models, across 10K+
 
-time from 2 hours to 15 minutes across 100M+ job market records; curated and transformed domain-specific datasets for
-LLM fine-tuning, improving downstream model performance and context relevance.
+job postings to validate semantic Job Classification. Generated Accuracy, Recall, Precision and other metrics for model
+comparison.
 
-• Developed ETL systems integrating 5 disparate data sources to support AI Jobs Dashboard for labor market research.
-• Designed and implemented LLM evaluation pipelines, benchmarking GPT-4, Claude, Llama-3, and Qwen across 10K+
-job-posting dataset, producing model selection insights adopted in academic research and CNN/WSJ-featured reports.
+• Optimized Snowflake data pipelines for ingestion and standardization of job-market data used in semantic classification.
+• Designed and deployed a data annotation pipeline for human annotators, reducing the annotation timeline from 10 hours
+
+to 3 hours per 100 Job Posts.
+
+• Automated monthly report generation and data update pipelines through Python workflows and CRON Jobs.
+
+Creative AI Solutions | AI Strategy Intern | Early Stage Startup
+
+July 2025 – September 2025
+
+• Built LLM automation flows integrating it with existing business workflows, reducing decision latency by 60%.
+• Designed modular prompt pipelines and evaluation tooling, exposing them through API layers for client systems.
 
 Oracle Cerner | Systems Engineer | Linux, Sybase, Active Directory
 
-September 2022 - December 2023
-• Resolved critical Linux application and Sybase database issues for hospital systems, reducing incident tickets from 20 to
+September 2022 – December 2023
 
-5 per week while maintaining 24/7 availability.
+• Resolved critical application/database issues across production hospital environments, reducing incident backlog by 75%.
+• Performed root-cause analysis of recurring outages; implemented maintenance plans to improve reliability. Collaborated
 
-• Collaborated with client IT teams to troubleshoot server incidents, achieving 75% improvement mean resolution time.
+with client IT teams to communicate incident trends, mitigation steps, and recovery procedures.
 
-Accenture | SAP Consultant | SAP WM/MM, Service Now
+Accenture | SAP Consultant, Process Automation | SAP WM/MM, ServiceNow
 
-July 2021 - July 2022
+July 2021 – July 2022
 
-• Analyzed and resolved 500+ SAP issues, maintaining 95% SLA compliance for supply chain operations.
-• Created Standard Operating Procedures during ServiceNow migration, reducing process violations by 80%.
+• Delivered SAP WM/MM workflow optimizations achieving 95% SLA compliance in Agile sprint cycles.
+• Created process automation SOPs during ServiceNow migration, reducing process violations by 80%.
 
 Projects
 
-Dynamic Surge Pricing using Regression | PySpark, Docker, Vertex AI, BigQuery, Pub/Sub May 2023 – August 2023
+Asha IT Recruitment | AWS, Bedrock, LangGraph, ChromaDB, Firebase Auth | go.umd.edu/ashait
 
-• Built a PySpark regression model on Seattle parking dataset to predict availability and apply surge pricing rules, trained
+January 2025 – Present
 
-on 2022 data and deployed for 2023 live stream.
+• Developed a full-stack recruitment platform with a serverless backend (AWS Lambda + API Gateway), Firebase
 
-• Containerized pipeline with Docker, deployed on Vertex AI, automated ingestion via Pub/Sub with results in BigQuery,
+Authentication and a DynamoDB schema supporting multi-role access.
 
-and visualized surge pricing on Streamlit. Ensured fault-tolerant processing with monitoring via Cloud Logging.
+• Implemented Bedrock- and LangGraph-based candidate scoring and semantic retrieval, via Lambda microservices.
+• Built secure file ingestion using presigned S3 workflows and event-driven resume parsing and data enrichment.
 
-Graph Search MCP | Neo4J, FastMCP | github
+OpenCanvas | Neo4j, LangChain, FastMCP, Vector DBs, Agentic Systems | npm
 
 June 2025
-• Built an AI-ready knowledge graph platform by integrating Neo4j with LLMs via the Model Context Protocol (MCP),
-enabling scalable natural-language queries over graph data; containerized with Docker for consistency and portability.
+• Designed and built a graph-native AI workspace that allows multiple concurrent LLM contexts to reason over persistent
 
-• Fine-tuned Gemma 3n using LoRA optimization on relationships, improving relation extraction accuracy.
-• Developed and evaluated hybrid graph + LLM retrieval systems, combining symbolic traversal with neural reasoning;
+user knowledge graphs.
 
-achieved a 73% improvement in retrieval accuracy over vector-only baselines.
+• Implemented hybrid retrieval pipelines combining Neo4j graph traversal with vector semantic search to improve factual
 
-Asha IT Recruitment Platform | AWS Lambda, DynamoDB, Firebase Auth, Bedrock | ashait.com
+grounding and reduce hallucination.
 
-Jan 2025 - Dec 2025
-• Architected an AI-driven recruitment platform using AWS Amplify, Lambda, and DynamoDB for small businesses and
+• Built long-term memory and session-level context persistence enabling multi-turn reasoning across tasks, documents,
 
-international students, integrating Firebase Authentication for secure user management.
-
-• Implemented Agentic AI pipelines in AWS to autonomously match candidates with jobs using LLM-based skill
-
-extraction, reasoning over resume–JD embeddings, and multi-agent workflows for ranking and explanation generation.
-• Deployed scalable microservices for AI inference via AWS Lambda and API Gateway; optimized query latency by 42%
-
-with asynchronous invocation and caching layers.
-
+and conversations.
 Leadership & Recognition
 
 Smith Master’s IS Association | VP Finance
 
 January 2025 - Present
 • Developed mentorship program connecting 100+ students and alumni. Featured in university article for AI integration.
-
-Winner: AI in Business Case Competition: Designed AI integration strategy for small businesses.
-
-November 2024
 

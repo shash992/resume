@@ -106,3 +106,109 @@ Smith Master’s IS Association | VP Finance
 January 2025 - Present
 • Developed mentorship program connecting 100+ students and alumni. Featured in university article for AI integration.
 
+github.com/shash992 | (240) 505-2480 | linkedin.com/in/saishashankk | shashkudkuli@gmail.com | Bloomington, IN 47401
+
+Sai Shashank Kudkuli
+
+Technical Skills
+
+Languages: Python, JavaScript, SQL
+AI/ML & Data: Machine Learning, LLMs, RAG Pipelines, Data Engineering, Data Pipelines, Feature Engineering, Model
+Evaluation (Precision, Recall, F1), Prompt Engineering
+Frameworks & Tools: LangChain, LangGraph, OpenAI API, Anthropic API, Scikit-learn
+Databases: PostgreSQL, Snowflake, BigQuery, DynamoDB, Neo4j
+Cloud & Infrastructure: AWS (Lambda, S3, API Gateway), Docker, Kubernetes, CI/CD
+
+Education
+
+University of Maryland
+Master of Science, Information Systems
+
+August 2024 – December 2025
+CGPA 3.93/4
+
+• Winner: AI in Business Case Competition: Designed AI integration strategy for small businesses.
+
+PES University
+Bachelor of Technology, Electronics and Communication
+
+August 2017 – December 2021
+Bengaluru, KA, India
+
+Experience
+
+R.H. Smith School of Business | AI Engineer (Data & ML Systems) | aimaps.ai
+
+November 2024 – Present
+• Built end-to-end AI/ML pipelines for large-scale job market data, processing 10K+ records using Python and Snowflake
+
+for downstream machine learning tasks.
+
+• Developed and evaluated ML models for semantic classification, achieving 91% accuracy with full evaluation metrics
+
+(Precision, Recall, F1).
+
+• Designed data pipelines for ingestion, transformation, and feature extraction, improving processing efficiency by 40%.
+• Collaborated with cross-functional teams to deploy production-ready AI solutions and automate reporting workflows.
+
+Creative AI Solutions | AI Engineer (ML & Automation) | creativeaisolutions.com
+
+July 2025 – September 2025
+
+• Deployed AI-driven automation systems integrating machine learning models and APIs into business workflows,
+
+reducting time to response from 3hrs to under 1min.
+
+• Developed data processing pipelines and model inference services, reducing decision latency by 60%.
+• Built scalable REST APIs for model serving and integrated solutions into client enterprise systems.
+
+Oracle Cerner | Systems Engineer | Enterprise Systems, Healthcare IT
+
+September 2022 – December 2023
+
+• Developed and maintained Linux-based automation scripts for server maintenance, operational monitoring, and issue
+
+resolution across production healthcare systems.
+
+• Supported deployment, maintenance, and reliability of healthcare IT applications, helping ensure stable production
+
+performance in a high-availability environment.
+
+• Worked on Cerner Millennium PathNet, a laboratory information system, monitoring database health and resolving
+
+system issues impacting critical workflows.
+
+• Participated in on-call production support and resolved 5 high-priority incidents through troubleshooting, root-cause
+
+analysis, and timely recovery actions.
+
+Accenture | Associate Software Engineer
+
+July 2021 – July 2022
+
+• Developed and supported SAP ABAP solutions for enterprise workflows in WM/MM modules, contributing to
+
+enhancement, maintenance, and defect resolution efforts.
+
+• Resolved 350+ production tickets by debugging application issues, implementing fixes, and supporting stable system
+
+performance within SLA targets.
+
+• Participated in on-call support for production systems, troubleshooting live issues and coordinating timely resolution for
+
+business-critical operations.
+
+• Authored 12+ customer support knowledge base articles during a ServiceNow migration, improving documentation
+
+quality and helping streamline issue resolution.
+
+Projects
+
+Asha IT Recruitment | AWS, Bedrock, LangGraph, ChromaDB, Firebase Auth | go.umd.edu/ashait January 2025 – Present
+• Developed an AI-powered recruitment platform leveraging machine learning models and data pipelines for candidate-job
+
+matching at scale.
+
+• Built serverless data processing workflows using AWS Lambda and DynamoDB for real-time data ingestion and scoring.
+
+
